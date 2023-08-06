@@ -39,6 +39,17 @@ android {
 }
 
 dependencies {
+    val navVersion = "2.6.0"
+    val lifecycleVersion = "2.6.1"
+
+    // Kotlin navigation
+    implementation ("androidx.navigation:navigation-fragment-ktx:$navVersion")
+    implementation ("androidx.navigation:navigation-ui-ktx:$navVersion")
+
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion")
 
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.appcompat:appcompat:1.6.1")
